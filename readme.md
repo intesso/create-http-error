@@ -11,6 +11,8 @@ npm install --save create-http-error
 ## use
 
 ```js
+var HttpError = require('create-http-error');
+
 // e.g. as finalhandler after no route matched.
 function finalhandler (req, res, next) {
     next(HttpError('400'));
