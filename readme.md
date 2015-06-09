@@ -1,6 +1,6 @@
 # create-http-error
 
-Simply creates http ERRORs with the given code.
+Simply creates http ERRORs with the given http error code.
 
 ## install
 

@@ -1,7 +1,7 @@
 {
   "name": "create-http-error",
   "version": "1.0.0",
-  "description": "Simply creates http ERRORs with the given code.",
+  "description": "Simply creates http ERRORs with the given http error code.",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
