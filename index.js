@@ -25,7 +25,7 @@ function HttpError(code, message, properties) {
   Error.call(this, message);
   this.name = 'HttpError';
   this.code = this.status = this.statusCode = code;
-  this.msg = message; // message property is not assignable with `Error` Object. therefore use `msg` property
+  this.msg = this.message = message; // can't read message property with `Error` Object. therefore use `msg` property as well.
 
   var self = this;
   if (properties) {
