@@ -35,6 +35,9 @@ returns the `String` representation of the `HttpError`.
 #### HttpError.toJSON()
 returns the Javascript Object properties of the `HttpError` Object.
 
+#### HttpError.codes
+exposes the standard `http` error codes.
+
 
 ## test
 ```bash
