@@ -23,6 +23,21 @@ test('create error with specific message', function(t) {
   t.end();
 });
 
+test('create error with additional properties', function(t) {
+  var err = HttpError('404', {
+    reason: 'dunno',
+    action: 'nada'
+  });
+  t.ok(err);
+  t.equal(err.status, 404);
+  t.equal(err.msg, 'Not Found');
+  t.equal(err.name, 'HttpError');
+  t.equal(err.reason, 'dunno');
+  t.equal(err.action, 'nada');
+
+  t.end();
+});
+
 test('test codes', function(t) {
 
   var codes = HttpError.codes;

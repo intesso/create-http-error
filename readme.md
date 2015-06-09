@@ -23,11 +23,12 @@ app.use(finalhandler); // connect or express app.
 
 ## api
 
-#### HttpError(code [,message])
+#### HttpError(code [,message] [,properties])
 
 creates an `Error` Object:
  - with the provided http error `code` like e.g. 500
  - if the `message` is omitted, the standard `http` error message is taken.
+ - if a `properties` Object is provided, it's properties will be added to the `Error` Object.
 
 #### HttpError.toString()
 returns the `String` representation of the `HttpError`.

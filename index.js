@@ -16,6 +16,7 @@ function HttpError(code, message, properties) {
   if (!(this instanceof HttpError)) return new HttpError(code, message);
 
   // default arguments
+  if (typeof message === 'object') properties = message, message = undefined;
   code = code || 500;
   code = typeof code === 'number' ? code : Number(code);
   message = message || codes[code] || codes[500];
@@ -28,8 +29,8 @@ function HttpError(code, message, properties) {
 
   var self = this;
   if (properties) {
-    Object.keys(properties).forEach(function() {
-
+    Object.keys(properties).forEach(function(key) {
+      self[key] = properties[key];
     });
   }
 

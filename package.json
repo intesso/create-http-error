@@ -4,7 +4,7 @@
   "description": "Simply creates http ERRORs with the given http error code.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "tape test.js"
   },
   "repository": {
     "type": "git",
