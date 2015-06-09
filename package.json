@@ -1,0 +1,26 @@
+{
+  "name": "create-http-error",
+  "version": "1.0.0",
+  "description": "Simply creates http ERRORs with the given code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intesso/create-http-error.git"
+  },
+  "keywords": [
+    "http",
+    "error"
+  ],
+  "author": "Andi Neck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intesso/create-http-error/issues"
+  },
+  "homepage": "https://github.com/intesso/create-http-error",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
