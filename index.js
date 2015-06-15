@@ -13,7 +13,7 @@ var codes = require('http').STATUS_CODES;
  */
 function HttpError(code, message, properties) {
   // make sure calling HttpError also works without the new keyword
-  if (!(this instanceof HttpError)) return new HttpError(code, message);
+  if (!(this instanceof HttpError)) return new HttpError(code, message, properties);
 
   // default arguments
   if (typeof message === 'object') properties = message, message = undefined;

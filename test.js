@@ -60,7 +60,6 @@ test('test toString()', function(t) {
 test('test toJSON()', function(t) {
 
   var err = HttpError('400');
-  console.log('ERR', err);
   var json = err.toJSON();
   t.ok(json);
 
